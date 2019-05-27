@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/putih"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+      <LinearLayout
+          android:id="@+id/line1"
+          android:background="@drawable/white_grey_border_top"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginBottom="5dp"
+          android:paddingLeft="10dp"
+
+          >
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:src="@drawable/ic_logohome"
+              android:id="@+id/imgHomeprofile"/>
+          <TextView
+              android:id="@+id/tv_name_home"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Muhammad Husen"
+              android:layout_marginLeft="10dp"
+              android:textSize="18dp"
+              android:layout_gravity="center_vertical"
+              />
+      </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+android:layout_below="@+id/line1"
+            android:background="@color/putih"
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp "
+            android:visibility="visible"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:id="@+id/captionHome"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:layout_height="wrap_content"
+                android:text="Why so seriouse"
+                android:textColor="@color/item"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+        <ImageView
+
+            android:id="@+id/imgHomestatus"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="350dp"
+            android:background="@color/putih"
+            android:layout_below="@id/line2"
+
+           />
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progreshome"/>
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_below="@+id/imgHomestatus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:background="@drawable/line"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.varunest.sparkbutton.SparkButton
+                    android:background="@color/tranparant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+
+                    app:sparkbutton_activeImage="@drawable/ic_likeblue"
+                    app:sparkbutton_inActiveImage="@drawable/ic_like"
+                    app:sparkbutton_iconSize="20dp"
+
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="124 Likes" />
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:background="@drawable/line"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.varunest.sparkbutton.SparkButton
+                    android:background="@color/tranparant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+
+                    app:sparkbutton_activeImage="@drawable/ic_coment"
+                    app:sparkbutton_inActiveImage="@drawable/ic_coment"
+                    app:sparkbutton_iconSize="20dp"
+
+                    />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="40 Coments"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_below="@id/line3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+
+
+</LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

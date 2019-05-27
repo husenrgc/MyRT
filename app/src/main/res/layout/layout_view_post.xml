@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relayout1">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/post_prof_photo"
+                    android:layout_marginTop="20dp"
+                    app:civ_border_color="@color/item"
+                    app:civ_border_width="0.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/item"
+                    android:textSize="20sp"
+                    android:id="@+id/post_usrname"
+                    android:text="Muhammad Husen"
+                    android:layout_toRightOf="@id/post_prof_photo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_profilemenu"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/menu_post"
+                    />
+
+            </RelativeLayout>
+
+            <prroject.com.myrt.utility.squareImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/post_img"
+                android:layout_below="@id/relayout1"
+               />
+           <LinearLayout android:id="@+id/line3"
+            android:layout_below="@+id/post_img"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:background="@drawable/line"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.varunest.sparkbutton.SparkButton
+android:background="@color/tranparant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+
+                    app:sparkbutton_activeImage="@drawable/ic_likeblue"
+                    app:sparkbutton_inActiveImage="@drawable/ic_like"
+                    app:sparkbutton_iconSize="20dp"
+
+                    />
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="124 Likes" />
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:background="@drawable/line"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.varunest.sparkbutton.SparkButton
+android:background="@color/tranparant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+
+                    app:sparkbutton_activeImage="@drawable/ic_coment"
+                    app:sparkbutton_inActiveImage="@drawable/ic_coment"
+                    app:sparkbutton_iconSize="20dp"
+
+                    />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="40 Coments"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
